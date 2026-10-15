@@ -271,7 +271,7 @@
                     <li class="step"><span class="step__v">04</span><span class="step__name">오픈</span><span
                             class="step__desc">인터넷 주소를 연결하고, <br class="br-d">네이버·구글에서 찾을 수 있게 신청해 드려요.</span></li>
                     <li class="step"><span class="step__v">05</span><span class="step__name">오픈 후</span><span
-                            class="step__desc">[수정 지원 기간] 동안 영업시간, 메뉴 같은 <br class="br-d">작은 수정은 바로 반영해요.</span></li>
+                            class="step__desc">오픈 후 1개월 동안 영업시간, 메뉴 같은 <br class="br-d">작은 수정은 바로 반영해요.</span></li>
                 </ol>
             </div>
         </section>
@@ -347,12 +347,17 @@
                         </details>
                         <details>
                             <summary>만드는 데 얼마나 걸리나요?<span class="faq__plus" aria-hidden="true">+</span></summary>
-                            <p>[평균 제작 기간]이 걸려요. 자료가 빨리 준비될수록 더 빨라져요.</p>
+                            <p>자료를 모두 전달받은 날부터 영업일 기준 10~14일(주말·공휴일 제외) 정도 걸려요. 페이지가 여러 개인 경우는 따로 상담해서 정해요.</p>
                         </details>
                         <details>
                             <summary>만드는 중에 바꾸고 싶은 게 생기면 고칠 수 있나요?<span class="faq__plus" aria-hidden="true">+</span>
                             </summary>
-                            <p>물론이에요. 미리 보기 단계에서 [무료 수정 횟수]번까지는 편하게 말씀해 주시면 바로 반영해 드려요. 처음 정한 큰 틀이 바뀌는 수정은 상담해서 함께 정해요.
+                            <p>물론이에요. 한 번에 모아서 말씀해 주신 걸 1번으로 세요. 미리 보기 단계에서 3번까지는 편하게 말씀해 주시면 바로 반영해 드려요. 수정하고 싶은 부분은
+                                가급적
+                                한 번에 모아서 말씀해 주세요. 처음
+                                정한 큰 틀이
+                                바뀌는
+                                수정은 상담해서 함께 정해요.
                             </p>
                         </details>
                     </div>
@@ -360,7 +365,8 @@
                         <h3 class="faq__cat">만든 뒤에</h3>
                         <details>
                             <summary>다 만든 뒤에 수정은 어떻게 하나요?<span class="faq__plus" aria-hidden="true">+</span></summary>
-                            <p>[수정 지원 기간] 동안 영업시간, 메뉴, 사진 교체 같은 작은 수정은 바로 반영해 드려요. 그 이후의 수정 방식은 상담 때 함께 정해요.</p>
+                            <p>원우웍스가 잘못 만든 것(글자 깨짐, 버튼 안 눌림 같은 오류)은 기간과 상관없이 무료로 고쳐드려요. 이건 서비스가 아니라 책임이에요. 사장님이 바꾸고 싶은
+                                것(영업시간, 메뉴, 사진 교체)은 오픈 후 1개월 동안 무료로 수정해 드려요. 그 이후의 수정 방식은 상담 때 함께 정해요.</p>
                         </details>
                         <details>
                             <summary>네이버에서 검색되나요?<span class="faq__plus" aria-hidden="true">+</span></summary>
@@ -415,7 +421,7 @@
                         </div>
                         <div>
                             <dt>통화 시간</dt>
-                            <dd>[통화 가능 시간]</dd>
+                            <dd>평일 오전 9시 ~ 오후 6시</dd>
                         </div>
                         <div>
                             <dt>카카오톡</dt>
@@ -435,11 +441,16 @@
                 <div class="contact__card">
                     <div class="form-done" id="form-done" role="status" hidden>
                         <p class="form-done__title">상담 신청이 접수됐어요.</p>
-                        <p class="body">[영업일 기준 N일] 안에 남겨주신 연락처로 먼저 연락드릴게요.</p>
+                        <p class="body">영업일 기준 1~2일 안에 남겨주신 연락처로 먼저 연락드릴게요.</p>
                         <button type="button" class="btn btn--line btn--sm" id="form-reset">다시 작성하기</button>
                     </div>
 
                     <form class="form" id="contact-form" novalidate>
+                        <input type="hidden" name="_subject" value="[원우웍스] 새 상담 신청">
+                        <div class="hp" aria-hidden="true">
+                            <label for="f-hp">비워 두세요</label>
+                            <input id="f-hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off">
+                        </div>
                         <div class="field-group">
                             <label for="f-name">가게 이름 또는 성함 <span class="req">(필수)</span></label>
                             <input id="f-name" name="name" class="field" type="text" autocomplete="organization"
@@ -468,7 +479,7 @@
                                 <ul>
                                     <li>받는 정보: 가게 이름 또는 성함, 연락처(전화번호 또는 이메일), 문의 내용</li>
                                     <li>쓰는 곳: 상담 연락과 견적 안내</li>
-                                    <li>보관 기간: 상담이 끝난 날부터 1년. 요청하시면 바로 지워드려요.</li>
+                                    <li>보관 기간: 상담이 끝나고 6개월이 지나면 지워요. 그 전이라도 지워달라고 하시면 바로 지워드려요.</li>
                                 </ul>
                                 <p>동의하지 않으셔도 전화나 카카오톡으로 똑같이 상담받으실 수 있어요. 자세한 내용은 <a href="privacy.html">개인정보처리방침</a>에서 볼
                                     수 있어요.</p>
@@ -490,9 +501,9 @@
         <div class="container site-footer__inner">
             <p class="site-footer__biz">
                 <span>상호 원우웍스</span>
-                <span>대표 [대표자 이름]</span>
+                <span>대표 김경원</span>
                 <span>사업자등록번호 217-14-13449</span>
-                <span>[사업장 주소]</span>
+                <span>경기도 화성시 동탄구 동탄중심상가2길 26-31, 6층 602-D17호(반송동, 가희프라자)</span>
             </p>
             <p class="site-footer__links">
                 <a href="privacy.html">개인정보처리방침</a>

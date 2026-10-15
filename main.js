@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    var FORM_ENDPOINT = '';
+    var FORM_ENDPOINT = 'https://formspree.io/f/myeklzol';
 
     var $ = function (sel) { return document.querySelector(sel); };
     var $$ = function (sel) { return Array.prototype.slice.call(document.querySelectorAll(sel)); };
