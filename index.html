@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>원우웍스 — 손님이 찾아오는 홈페이지</title>
+    <meta name="description" content="동네 가게, 1인 사업자를 위한 홈페이지 제작. 9년 마케팅 경험으로 손님이 헤매지 않고 연락하게 되는 홈페이지를 만듭니다.">
+    <meta name="theme-color" content="#F3F4F1">
+    <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="canonical" href="https://[도메인]/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="원우웍스">
+    <meta property="og:title" content="원우웍스 — 손님이 찾아오는 홈페이지">
+    <meta property="og:description" content="만들고 끝나는 홈페이지 말고, 손님이 찾아오는 홈페이지.">
+    <meta property="og:url" content="https://[도메인]/">
+    <meta property="og:image" content="https://[도메인]/og-image.png">
+    <meta property="og:locale" content="ko_KR">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+
+    <a class="skip" href="#main">본문 바로가기</a>
+
+    <header class="site-header">
+        <div class="site-header__inner">
+
+            <a class="logo" href="#top" aria-label="원우웍스 처음으로">
+                <span class="logo__mark" aria-hidden="true">www<span class="logo__dot">.</span></span>
+                <span class="logo__bar" aria-hidden="true"></span>
+                <span class="logo__word" aria-hidden="true"><b>w</b>on<b>w</b>oo <b>w</b>orks<span
+                        class="logo__dot">.</span></span>
+            </a>
+
+            <nav class="mainnav" aria-label="주요 메뉴">
+                <a class="navlink" href="#why">왜 원우웍스</a>
+                <a class="navlink" href="#ux">손님 입장</a>
+                <a class="navlink" href="#process">진행 과정</a>
+                <a class="navlink" href="#work">작업</a>
+                <a class="navlink" href="#faq">자주 묻는 질문</a>
+            </nav>
+
+            <div class="header-actions">
+                <a class="btn btn--ink btn--sm hdr-cta" href="#contact">상담 신청</a>
+            </div>
+        </div>
+    </header>
+
+    <main id="main" tabindex="-1">
+
+        <section id="top" class="section paper">
+            <div class="container hero2">
+                <div class="hero2__head">
+                    <div class="hero2__row">
+                        <div class="hero2__main">
+                            <p class="eyebrow">동네 가게 · 1인 사업자를 위한 홈페이지 제작</p>
+                            <h1 class="hero2__title">손님은 홈페이지보다 <br class="br-d">검색창에서 먼저 가게를 만나요</h1>
+                        </div>
+                        <div class="hero2__aside">
+                            <p class="lead">그래서 원우웍스는 손님이 검색하고, 카톡으로 주고받고, <br class="br-d">눌러서 들어오는 순간까지 하나로 이어지게 만들어요.
+                                <br class="br-d">바이럴마케팅 9년 동안 쌓은 경험과 노하우를 바탕으로 <br class="br-d">사람들이 무엇을 보고 누르는지부터 생각해요.
+                            </p>
+                            <div class="btn-row">
+                                <a class="btn btn--ink" href="#contact">상담 신청하기 →</a>
+                                <a class="btn btn--line" href="#why">어떻게 다른가요?</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="journey" id="journey">
+                    <div class="journey__bar">
+                        <p class="journey__title">사장님 가게라면 이렇게 보여요</p>
+                        <div class="chips" role="group" aria-label="업종 선택">
+                            <button type="button" class="chip" data-biz="bakery" aria-pressed="true">빵집</button>
+                            <button type="button" class="chip" data-biz="restaurant" aria-pressed="false">식당</button>
+                            <button type="button" class="chip" data-biz="hair" aria-pressed="false">미용실</button>
+                            <button type="button" class="chip" data-biz="studio" aria-pressed="false">공방</button>
+                            <button type="button" class="chip" data-biz="academy" aria-pressed="false">학원</button>
+                            <button type="button" class="chip" data-biz="office" aria-pressed="false">1인 사무실</button>
+                        </div>
+                    </div>
+
+                    <ol class="journey__steps">
+                        <li class="jstep">
+                            <p class="jstep__cap"><span class="jstep__no">01</span>검색했을 때</p>
+                            <div class="jcard">
+                                <div class="search-bar"><svg class="search-bar__ico" aria-hidden="true"
+                                        viewBox="0 0 16 16">
+                                        <circle cx="7" cy="7" r="5" />
+                                        <path d="M11 11l3.5 3.5" />
+                                    </svg><span data-f="query">동네 빵집</span></div>
+                                <div class="search-result">
+                                    <span class="search-result__url" data-f="domain">www.oo-bakery.kr</span>
+                                    <span class="search-result__title" data-f="title">OO베이커리 — 매일 아침 굽는 동네 빵집</span>
+                                    <span class="search-result__desc" data-f="desc">오늘 나온 빵과 영업시간을 바로 확인하세요. 예약 주문은 전화로
+                                        받아요.</span>
+                                    <span class="search-result__meta"><span class="dot"></span><span data-f="status">영업
+                                            중 · 20:00까지</span></span>
+                                </div>
+                            </div>
+                            <p class="jstep__note">손님이 실제로 검색하는 말로 제목과 설명을 써요.</p>
+                        </li>
+                        <li class="jstep">
+                            <p class="jstep__cap"><span class="jstep__no">02</span>카톡으로 받았을 때</p>
+                            <div class="jcard">
+                                <div class="chat">
+                                    <span class="chat__msg">여기 괜찮대, 이번 주에 가볼래?</span>
+                                    <div class="link-card">
+                                        <div class="link-card__img" aria-hidden="true"></div>
+                                        <div class="link-card__body">
+                                            <strong data-f="name">OO베이커리</strong>
+                                            <span data-f="desc">오늘 나온 빵과 영업시간을 바로 확인하세요. 예약 주문은 전화로 받아요.</span>
+                                            <span class="link-card__domain" data-f="domain">www.oo-bakery.kr</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="jstep__note">카톡·블로그에 붙였을 때 뜨는 사진과 문구까지 챙겨요.</p>
+                        </li>
+                        <li class="jstep">
+                            <p class="jstep__cap"><span class="jstep__no">03</span>눌러서 들어왔을 때</p>
+                            <div class="jcard">
+                                <div class="mini-page">
+                                    <strong data-f="name">OO베이커리</strong>
+                                    <span class="mini-page__status"><span class="dot"></span><span data-f="status">영업 중
+                                            · 20:00까지</span></span>
+                                    <div class="mini-page__img" aria-hidden="true"></div>
+                                    <div class="mini-page__cta"><span class="mini-btn mini-btn--ink" data-f="cta1">전화
+                                            주문</span><span class="mini-btn" data-f="cta2">길찾기</span></div>
+                                </div>
+                            </div>
+                            <p class="jstep__note">지금 가도 되는지, 어떻게 연락하는지가 바로 보여요.</p>
+                        </li>
+                    </ol>
+                    <p class="sr-only" aria-live="polite" id="biz-live"></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="why" class="section">
+            <div class="container">
+                <div class="section-head">
+                    <h2 class="h2"><span class="h2__no">01</span> 마케터의 눈으로 만듭니다</h2>
+                    <p class="body">바이럴마케팅을 9년 동안 하면서, <br class="br-d">예쁘기만 하고 아무도 누르지 않는 화면을 많이 봤어요. <br
+                            class="br-d">그래서 처음부터 손님이 찾아오고 연락하게 되는 홈페이지를 만듭니다.</p>
+                </div>
+
+                <ol class="rows">
+                    <li class="row"><span class="row__no">01</span>
+                        <h3 class="row__title">손님이 처음 보는 3초를 설계해요</h3>
+                        <p class="row__desc">무엇을 파는 곳인지, 지금 문을 열었는지, 어떻게 연락하는지. <br class="br-d">들어오자마자 보이게 배치합니다.
+                        </p>
+                    </li>
+                    <li class="row"><span class="row__no">02</span>
+                        <h3 class="row__title">처음부터 검색에 잘 읽히는 구조로</h3>
+                        <p class="row__desc">네이버와 구글이 이해하기 쉬운 제목과 설명, 주소와 연락처까지 제대로 넣어요. <br class="br-d">나중에 따로 손볼
+                            일이 줄어듭니다.</p>
+                    </li>
+                    <li class="row"><span class="row__no">03</span>
+                        <h3 class="row__title">링크를 공유했을 때도 예쁘게</h3>
+                        <p class="row__desc">카카오톡이나 블로그에 주소를 붙였을 때 뜨는 미리보기 사진과 문구까지 챙겨요. <br class="br-d">손님이 누르고
+                            싶어지는 첫인상이에요.</p>
+                    </li>
+                    <li class="row"><span class="row__no">04</span>
+                        <h3 class="row__title">연락은 손님이 망설이는 그 자리에</h3>
+                        <p class="row__desc">전화, 카카오톡, 예약 버튼을 <br class="br-d">손님이 "가볼까?" 하는 바로 그 순간에 보이도록 둡니다.</p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <section id="ux" class="section paper">
+            <div class="container stack-40">
+
+                <div class="stack-40">
+                    <div class="section-head">
+                        <h2 class="h2"><span class="h2__no">02</span> 사장님 손님 입장에서 먼저 써봅니다</h2>
+                        <p class="body">고객만 생각하며 일해온 사람이 만들면 작은 부분부터 달라요. <br class="br-d">손님이 휴대폰을 들고 가게를 찾는 그 몇 초를
+                            기준으로 만듭니다.</p>
+                    </div>
+                    <div class="cmp">
+                        <div class="cmp__head" aria-hidden="true">
+                            <div>흔히 보는 홈페이지</div>
+                            <div class="cmp__head-ours">원우웍스가 만들면</div>
+                        </div>
+                        <ul class="cmp__list">
+                            <li class="cmp__row">
+                                <div class="cmp__before"><svg class="ico" aria-hidden="true" viewBox="0 0 16 16">
+                                        <path d="M4 4l8 8M12 4l-8 8" />
+                                    </svg><span><span class="cmp__lbl">흔한 경우: </span>전화번호가 사진 속 작은 글씨라 눌러지지 않아요</span>
+                                </div>
+                                <div class="cmp__after"><svg class="ico ico--ok" aria-hidden="true" viewBox="0 0 16 16">
+                                        <path d="M3 8.5l3.2 3L13 4.5" />
+                                    </svg><span><span class="cmp__lbl">원우웍스: </span>누르면 바로 전화가 걸리는 큰 버튼</span></div>
+                            </li>
+                            <li class="cmp__row">
+                                <div class="cmp__before"><svg class="ico" aria-hidden="true" viewBox="0 0 16 16">
+                                        <path d="M4 4l8 8M12 4l-8 8" />
+                                    </svg><span><span class="cmp__lbl">흔한 경우: </span>영업시간을 찾으려면 메뉴를 여러 번 눌러야 해요</span>
+                                </div>
+                                <div class="cmp__after"><svg class="ico ico--ok" aria-hidden="true" viewBox="0 0 16 16">
+                                        <path d="M3 8.5l3.2 3L13 4.5" />
+                                    </svg><span><span class="cmp__lbl">원우웍스: </span>첫 화면에서 오늘 영업 여부부터 확인</span></div>
+                            </li>
+                            <li class="cmp__row">
+                                <div class="cmp__before"><svg class="ico" aria-hidden="true" viewBox="0 0 16 16">
+                                        <path d="M4 4l8 8M12 4l-8 8" />
+                                    </svg><span><span class="cmp__lbl">흔한 경우: </span>메뉴판을 사진 한 장으로 올려 확대해야 보여요</span>
+                                </div>
+                                <div class="cmp__after"><svg class="ico ico--ok" aria-hidden="true" viewBox="0 0 16 16">
+                                        <path d="M3 8.5l3.2 3L13 4.5" />
+                                    </svg><span><span class="cmp__lbl">원우웍스: </span>확대하지 않아도 읽히는 글자 메뉴</span></div>
+                            </li>
+                            <li class="cmp__row">
+                                <div class="cmp__before"><svg class="ico" aria-hidden="true" viewBox="0 0 16 16">
+                                        <path d="M4 4l8 8M12 4l-8 8" />
+                                    </svg><span><span class="cmp__lbl">흔한 경우: </span>주소만 적혀 있어서 지도 앱에 다시 검색해요</span>
+                                </div>
+                                <div class="cmp__after"><svg class="ico ico--ok" aria-hidden="true" viewBox="0 0 16 16">
+                                        <path d="M3 8.5l3.2 3L13 4.5" />
+                                    </svg><span><span class="cmp__lbl">원우웍스: </span>누르면 지도 앱으로 바로 길찾기</span></div>
+                            </li>
+                            <li class="cmp__row">
+                                <div class="cmp__before"><svg class="ico" aria-hidden="true" viewBox="0 0 16 16">
+                                        <path d="M4 4l8 8M12 4l-8 8" />
+                                    </svg><span><span class="cmp__lbl">흔한 경우: </span>컴퓨터 화면 기준이라 휴대폰에선 글씨가 깨알 같아요</span>
+                                </div>
+                                <div class="cmp__after"><svg class="ico ico--ok" aria-hidden="true" viewBox="0 0 16 16">
+                                        <path d="M3 8.5l3.2 3L13 4.5" />
+                                    </svg><span><span class="cmp__lbl">원우웍스: </span>휴대폰 화면부터 먼저 만들고 확인</span></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="process" class="section">
+            <div class="container split">
+                <div class="split__side section-head">
+                    <h2 class="h2"><span class="h2__no">03</span> 사장님은 이것만 준비하세요</h2>
+                    <p class="body">어려운 건 저희가 할게요. <br class="br-d">사장님은 가게를 제일 잘 아는 사람으로서 <br class="br-d">이야기만 들려주시면
+                        돼요.</p>
+                </div>
+                <ol class="steps">
+                    <li class="step"><span class="step__v">01</span><span class="step__name">상담</span><span
+                            class="step__desc">어떤 가게인지, 손님이 주로 누구인지 편하게 이야기해요. <br class="br-d">꼭 필요한 것과 빼도 되는 것을 같이
+                            정리합니다.</span></li>
+                    <li class="step"><span class="step__v">02</span><span class="step__name">자료 보내기</span><span
+                            class="step__desc">가게 사진과 소개글만 있으면 돼요. <br class="br-d">글 쓰기가 어려우시면 마케팅 경험으로 같이 다듬어
+                            드려요.</span></li>
+                    <li class="step"><span class="step__v">03</span><span class="step__name">미리 보기</span><span
+                            class="step__desc">만든 걸 휴대폰으로 먼저 보여드려요. <br class="br-d">직접 눌러보시고 고칠 곳을 말씀해 주시면 돼요.</span>
+                    </li>
+                    <li class="step"><span class="step__v">04</span><span class="step__name">오픈</span><span
+                            class="step__desc">인터넷 주소를 연결하고, <br class="br-d">네이버·구글에서 찾을 수 있게 신청해 드려요.</span></li>
+                    <li class="step"><span class="step__v">05</span><span class="step__name">오픈 후</span><span
+                            class="step__desc">[수정 지원 기간] 동안 영업시간, 메뉴 같은 <br class="br-d">작은 수정은 바로 반영해요.</span></li>
+                </ol>
+            </div>
+        </section>
+
+        <section id="work" class="section paper">
+            <div class="container stack-40">
+                <h2 class="h2"><span class="h2__no">04</span> 이렇게 만들었어요</h2>
+
+                <article class="case">
+                    <div class="case__info">
+                        <h3 class="case__title">ONSEMIRO<br>반려동물 디지털 추모관</h3>
+                        <p class="case__desc">[프로젝트 한 줄 소개 — 누구의 어떤 고민을 풀었는지]</p>
+                        <a class="case__link" href="https://onsemiro.me" target="_blank" rel="noopener">onsemiro.me
+                            <span aria-hidden="true">↗</span><span class="sr-only">(새 창)</span></a>
+                    </div>
+
+                    <div class="case__body">
+                        <div class="case__plain">
+                            <span class="case__caption">이렇게 바꿨어요</span>
+                            <div class="change">
+                                <span class="change__before">전 · [예: 한 화면에 입력할 내용이 전부 나열돼 있어 시작이 막막했어요]</span>
+                                <span class="change__after">후 · [예: 사진 → 이름 → 남기고 싶은 말, 세 단계로 나눴어요]</span>
+                            </div>
+                            <div class="change">
+                                <span class="change__before">전 · [예: 다 만들고 나면 아무 안내 없이 처음 화면으로 돌아갔어요]</span>
+                                <span class="change__after">후 · [예: 가족에게 공유할 링크와 다음 할 일을 바로 보여줘요]</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="faq" class="section">
+            <div class="container split">
+                <div class="split__side">
+                    <h2 class="h2"><span class="h2__no">05</span> 자주 묻는 질문</h2>
+                </div>
+                <div class="faq">
+                    <div class="faq__group">
+                        <h3 class="faq__cat">비용</h3>
+                        <details>
+                            <summary>비용은 얼마인가요?<span class="faq__plus" aria-hidden="true">+</span></summary>
+                            <p>어떤 내용을 넣을지에 따라 달라서 정해진 가격을 걸어두지 않았어요. 상담에서 꼭 필요한 것과 빼도 되는 것을 같이 정리한 뒤, 꼭 필요한 것만 넣어서 가격을
+                                알려드려요. 필요 없는 걸 끼워 넣지 않는 게 원칙이에요.</p>
+                        </details>
+                        <details>
+                            <summary>다 만든 뒤에 매달 드는 돈이 있나요?<span class="faq__plus" aria-hidden="true">+</span></summary>
+                            <p>홈페이지를 인터넷에 올려두는 비용은 따로 들지 않아요. 인터넷 주소 비용만 1년에 한 번 내시면 돼요. 수정을 자주 맡기실 분께는 매달 정해진 금액으로 관리해
+                                드리는 방법도 있지만, 꼭 하셔야 하는 건 아니에요.</p>
+                        </details>
+                        <details>
+                            <summary>보안 인증서(SSL) 비용이 따로 드나요?<span class="faq__plus" aria-hidden="true">+</span>
+                            </summary>
+                            <p>아니요. 주소 앞에 자물쇠가 뜨는 보안 연결은 무료로 기본 포함돼요. 매년 갱신도 자동으로 되어서 따로 챙기실 필요가 없어요.</p>
+                        </details>
+                        <details>
+                            <summary>정부 지원사업으로 만들 수 있나요?<span class="faq__plus" aria-hidden="true">+</span></summary>
+                            <p>소상공인 홈페이지 제작을 지원하는 사업이 해마다 열리지만, 대상과 금액, 신청 기간이 매년 달라요. 상담 때 지금 신청할 수 있는 사업이 있는지 같이 찾아봐
+                                드릴게요.</p>
+                        </details>
+                    </div>
+                    <div class="faq__group">
+                        <h3 class="faq__cat">만드는 과정</h3>
+                        <details>
+                            <summary>컴퓨터를 잘 몰라도 괜찮을까요?<span class="faq__plus" aria-hidden="true">+</span></summary>
+                            <p>괜찮아요. 사진과 가게 소개만 준비해 주시면 나머지는 저희가 챙겨요. 만든 홈페이지도 휴대폰으로 주소를 눌러 바로 보실 수 있어요.</p>
+                        </details>
+                        <details>
+                            <summary>무엇을 준비하면 되나요?<span class="faq__plus" aria-hidden="true">+</span></summary>
+                            <p>가게 사진 몇 장과 가게 소개, 메뉴나 가격, 영업시간 정도면 충분해요. 소개 글을 쓰기 어려우시면 말로 들려주세요. 저희가 손님이 읽기 좋게 다듬어 드려요.
+                            </p>
+                        </details>
+                        <details>
+                            <summary>만드는 데 얼마나 걸리나요?<span class="faq__plus" aria-hidden="true">+</span></summary>
+                            <p>[평균 제작 기간]이 걸려요. 자료가 빨리 준비될수록 더 빨라져요.</p>
+                        </details>
+                        <details>
+                            <summary>만드는 중에 바꾸고 싶은 게 생기면 고칠 수 있나요?<span class="faq__plus" aria-hidden="true">+</span>
+                            </summary>
+                            <p>물론이에요. 미리 보기 단계에서 [무료 수정 횟수]번까지는 편하게 말씀해 주시면 바로 반영해 드려요. 처음 정한 큰 틀이 바뀌는 수정은 상담해서 함께 정해요.
+                            </p>
+                        </details>
+                    </div>
+                    <div class="faq__group">
+                        <h3 class="faq__cat">만든 뒤에</h3>
+                        <details>
+                            <summary>다 만든 뒤에 수정은 어떻게 하나요?<span class="faq__plus" aria-hidden="true">+</span></summary>
+                            <p>[수정 지원 기간] 동안 영업시간, 메뉴, 사진 교체 같은 작은 수정은 바로 반영해 드려요. 그 이후의 수정 방식은 상담 때 함께 정해요.</p>
+                        </details>
+                        <details>
+                            <summary>네이버에서 검색되나요?<span class="faq__plus" aria-hidden="true">+</span></summary>
+                            <p>오픈할 때 네이버와 구글에 "이런 가게 홈페이지가 생겼어요" 하고 신청해 드려요. 다만 검색했을 때 몇 번째로 나올지는 누구도 정할 수 없어서, "맨 위에
+                                나오게 해드린다" 같은 약속은 하지 않아요.</p>
+                        </details>
+                        <details>
+                            <summary>나중에 다른 곳으로 옮길 수 있나요?<span class="faq__plus" aria-hidden="true">+</span></summary>
+                            <p>네. 홈페이지를 이루는 파일 전체와 인터넷 주소는 처음부터 사장님 것이에요. 요청하시면 언제든 모두 넘겨드려서, 다른 업체에 맡기셔도 처음부터 다시 만들 필요가
+                                없어요.</p>
+                        </details>
+                    </div>
+                    <div class="faq__group">
+                        <h3 class="faq__cat">어려운 말 풀이</h3>
+                        <details>
+                            <summary>"도메인"이 뭔가요? 누구 이름으로 사나요?<span class="faq__plus" aria-hidden="true">+</span>
+                            </summary>
+                            <p>도메인은 홈페이지의 인터넷 주소예요. www.가게이름.co.kr 같은 거요. 1년마다 돈을 내고 빌리는 건데, 보통 1년에 2만 원 안팎이에요. 꼭 사장님
+                                이름으로 사야 나중에 무슨 일이 있어도 주소를 지킬 수 있어요. 사는 방법은 옆에서 하나하나 도와드려요.</p>
+                        </details>
+                        <details>
+                            <summary>"반응형"이 뭔가요?<span class="faq__plus" aria-hidden="true">+</span></summary>
+                            <p>휴대폰, 태블릿, 컴퓨터 어디서 열어도 화면 크기에 맞춰 알아서 보기 좋게 바뀌는 홈페이지를 말해요. 원우웍스가 만드는 홈페이지는 모두 기본으로 이렇게
+                                만들어요.</p>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container contact">
+                <div class="contact__side stack-20">
+                    <h2 class="h2"><span class="h2__no">06</span> 상담 신청</h2>
+                    <p class="body">정리가 덜 된 생각이어도 괜찮아요. <br class="br-d">"이런 게 필요할 것 같은데…" 한마디면 충분해요. <br
+                            class="br-d">무엇이 필요한지는 같이 정리해요.</p>
+                    <div class="contact__actions">
+                        <a class="btn btn--ink" href="tel:010-2554-4784">전화로 물어보기</a>
+                        <a class="btn btn--kakao" href="https://pf.kakao.com/_xhlRmX/chat" target="_blank"
+                            rel="noopener"><svg class="btn__icon" aria-hidden="true" viewBox="0 0 20 20">
+                                <path
+                                    d="M4 4.5h12a1.5 1.5 0 0 1 1.5 1.5v7a1.5 1.5 0 0 1-1.5 1.5H9l-3.5 3v-3H4A1.5 1.5 0 0 1 2.5 13V6A1.5 1.5 0 0 1 4 4.5z" />
+                                <circle cx="7" cy="9.5" r="1" />
+                                <circle cx="10" cy="9.5" r="1" />
+                                <circle cx="13" cy="9.5" r="1" />
+                            </svg>카카오톡으로 물어보기</a>
+                    </div>
+                    <dl class="contact__info">
+                        <div>
+                            <dt>전화</dt>
+                            <dd><a href="tel:010-2554-4784">010-2554-4784</a></dd>
+                        </div>
+                        <div>
+                            <dt>통화 시간</dt>
+                            <dd>[통화 가능 시간]</dd>
+                        </div>
+                        <div>
+                            <dt>카카오톡</dt>
+                            <dd class="contact__kakao">
+                                <span>원우웍스 (@wonwooworks)</span>
+                                <a class="chip-add" href="https://pf.kakao.com/_xhlRmX" target="_blank" rel="noopener">+
+                                    채널 추가</a>
+                            </dd>
+                        </div>
+                        <div>
+                            <dt>이메일</dt>
+                            <dd><a href="mailto:wonoo.works@gmail.com">wonoo.works@gmail.com</a></dd>
+                        </div>
+                    </dl>
+                </div>
+
+                <div class="contact__card">
+                    <div class="form-done" id="form-done" role="status" hidden>
+                        <p class="form-done__title">상담 신청이 접수됐어요.</p>
+                        <p class="body">[영업일 기준 N일] 안에 남겨주신 연락처로 먼저 연락드릴게요.</p>
+                        <button type="button" class="btn btn--line btn--sm" id="form-reset">다시 작성하기</button>
+                    </div>
+
+                    <form class="form" id="contact-form" novalidate>
+                        <div class="field-group">
+                            <label for="f-name">가게 이름 또는 성함 <span class="req">(필수)</span></label>
+                            <input id="f-name" name="name" class="field" type="text" autocomplete="organization"
+                                required aria-required="true">
+                            <p class="field-error" id="f-name-err" hidden>어떻게 불러드리면 될까요? 가게 이름이나 성함을 적어주세요.</p>
+                        </div>
+                        <div class="field-group">
+                            <label for="f-contact">연락받을 번호 또는 이메일 <span class="req">(필수)</span></label>
+                            <input id="f-contact" name="contact" class="field" type="text" required
+                                aria-required="true">
+                            <p class="field-error" id="f-contact-err" hidden>연락드릴 곳이 있어야 해요. 휴대폰 번호나 이메일 중 편한 걸 적어주세요.
+                            </p>
+                        </div>
+                        <div class="field-group">
+                            <label for="f-msg">어떤 가게인지 간단히 <span class="opt">(선택)</span></label>
+                            <textarea id="f-msg" name="message" class="field field--area" rows="4"
+                                placeholder="예: 동네 빵집이에요. 메뉴랑 영업시간 보여주는 페이지가 필요해요."></textarea>
+                        </div>
+                        <p class="field-error" id="form-error" role="alert" hidden>전송하지 못했어요. 잠시 후 다시 시도하시거나 카카오톡으로 문의해
+                            주세요.</p>
+                        <button type="submit" class="btn btn--ink" id="form-submit">상담 신청하기 →</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container site-footer__inner">
+            <span>© 2026 원우웍스 · WONWOO WORKS · 사업자등록번호 217-14-13449</span>
+        </div>
+    </footer>
+
+    <nav class="mcta" aria-label="빠른 연락">
+        <a class="btn btn--ink" href="tel:010-2554-4784">전화하기</a>
+        <a class="btn btn--kakao" href="https://pf.kakao.com/_xhlRmX/chat" target="_blank" rel="noopener"><svg
+                class="btn__icon" aria-hidden="true" viewBox="0 0 20 20">
+                <path
+                    d="M4 4.5h12a1.5 1.5 0 0 1 1.5 1.5v7a1.5 1.5 0 0 1-1.5 1.5H9l-3.5 3v-3H4A1.5 1.5 0 0 1 2.5 13V6A1.5 1.5 0 0 1 4 4.5z" />
+                <circle cx="7" cy="9.5" r="1" />
+                <circle cx="10" cy="9.5" r="1" />
+                <circle cx="13" cy="9.5" r="1" />
+            </svg>카카오톡 문의</a>
+    </nav>
+
+
+</body>
+
+</html>
