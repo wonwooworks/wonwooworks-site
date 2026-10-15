@@ -81,6 +81,20 @@
         { input: $('#f-contact'), error: $('#f-contact-err') }
     ];
 
+    var agree = $('#f-agree');
+    var agreeErr = $('#f-agree-err');
+
+    function setAgreeError(on) {
+        agreeErr.hidden = !on;
+        agree.setAttribute('aria-invalid', on ? 'true' : 'false');
+        if (on) agree.setAttribute('aria-describedby', agreeErr.id);
+        else agree.removeAttribute('aria-describedby');
+    }
+
+    agree.addEventListener('change', function () {
+        if (agree.checked) setAgreeError(false);
+    });
+
     function setError(f, on) {
         f.error.hidden = !on;
         f.input.setAttribute('aria-invalid', on ? 'true' : 'false');
@@ -102,6 +116,8 @@
             setError(f, bad);
             if (bad && !firstInvalid) firstInvalid = f.input;
         });
+        setAgreeError(!agree.checked);
+        if (!agree.checked && !firstInvalid) firstInvalid = agree;
         if (firstInvalid) { firstInvalid.focus(); return; }
         $('#form-error').hidden = true;
 
@@ -130,6 +146,7 @@
     $('#form-reset').addEventListener('click', function () {
         form.reset();
         fields.forEach(function (f) { setError(f, false); });
+        setAgreeError(false);
         done.hidden = true;
         form.hidden = false;
         fields[0].input.focus();
