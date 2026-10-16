@@ -928,17 +928,28 @@ section[id] {
     flex: 0 0 40%;
     min-width: 0;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     justify-content: center;
-    padding: 48px 32px;
+    gap: 28px;
+    padding: 44px 40px;
     background: #F4EFE7;
 }
 
+.case__shots {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
 .case__shot {
-    width: 100%;
-    max-width: 280px;
+    width: 160px;
     height: auto;
-    filter: drop-shadow(0 20px 40px rgba(80, 60, 30, .14));
+    filter: drop-shadow(0 16px 32px rgba(80, 60, 30, .14));
+}
+
+.case__shot+.case__shot {
+    /* margin-top: 40px; */
 }
 
 .case__content {
@@ -946,31 +957,47 @@ section[id] {
     min-width: 0;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    justify-content: center;
     padding: 44px 48px;
     background: var(--white);
 }
 
+.case__about {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
 .case__title {
-    font: 700 26px/1.35 var(--sans);
+    font: 700 22px/1.4 var(--sans);
 }
 
 .case__desc {
-    font-size: 16px;
-    line-height: 1.8;
+    font-size: 15px;
+    line-height: 1.75;
     color: var(--ink-2);
 }
 
 .case__qa {
-    border-top: 1px solid var(--line-soft);
+    display: flex;
+    flex-direction: column;
 }
 
 .qa {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    padding: 24px 0;
+    padding: 28px 0;
     border-bottom: 1px solid var(--line-soft);
+}
+
+.qa:first-child {
+    padding-top: 0;
+}
+
+.qa:last-child {
+    padding-bottom: 0;
+    border-bottom: 0;
 }
 
 .qa__row {
@@ -983,9 +1010,9 @@ section[id] {
 .qa__label {
     padding: 3px 10px;
     border-radius: 999px;
-    background: var(--bg);
+    background: #ECEDEA;
     font: 700 13px var(--sans);
-    color: var(--muted);
+    color: var(--ink-2);
 }
 
 .qa__row--solve .qa__label {
@@ -1006,6 +1033,7 @@ section[id] {
 
 .case__link {
     align-self: flex-start;
+    margin-top: 4px;
     font: 500 14px var(--mono);
 }
 
@@ -1394,6 +1422,10 @@ section[id] {
 }
 
 @media (max-width: 1180px) {
+    .case__desc .br-d {
+        display: none;
+    }
+
 
     .split>*,
     .contact>* {
@@ -1458,6 +1490,11 @@ section[id] {
 }
 
 @media (max-width: 760px) {
+    .case__shot {
+        width: calc(50% - 8px);
+        max-width: 160px;
+    }
+
     .case__content {
         padding: 28px 20px;
     }
