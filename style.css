@@ -1666,6 +1666,61 @@ section[id] {
     .site-footer {
         padding-bottom: 76px;
     }
+
+    .nav-long {
+        display: none;
+    }
+
+    .mainnav {
+        justify-content: space-between;
+        gap: 0;
+        margin: 0 -6px;
+    }
+
+    .mainnav .navlink {
+        padding: 0 6px;
+        font-size: 14px;
+    }
+
+    .row {
+        grid-template-columns: 32px minmax(0, 1fr);
+        column-gap: 8px;
+    }
+
+    .cmp__row {
+        gap: 8px;
+        padding: 16px 16px;
+    }
+
+    .cmp__before,
+    .cmp__after {
+        padding: 0;
+    }
+
+    .cmp__before {
+        font-size: 15px;
+    }
+
+    .cmp__after {
+        padding: 12px 14px;
+        border-radius: 8px;
+        background: #EAF5EE;
+    }
+
+    .cmp__lbl {
+        display: block;
+        margin-bottom: 2px;
+        font-size: 13px;
+    }
+
+    .cmp__after .cmp__lbl {
+        color: var(--green);
+    }
+
+    .cmp__after .ico--ok {
+        stroke: #1E9E55;
+        stroke-width: 2.2;
+    }
 }
 
 @media (prefers-reduced-motion: reduce) {
