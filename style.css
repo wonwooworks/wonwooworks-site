@@ -99,6 +99,14 @@ summary {
     text-wrap: pretty;
 }
 
+.cmp__before>span,
+.cmp__after>span,
+.faq details p,
+.consent__more li,
+.policy p {
+    text-wrap: balance;
+}
+
 :focus-visible {
     outline: 2px solid var(--blue);
     outline-offset: 3px;
@@ -948,9 +956,6 @@ section[id] {
     filter: drop-shadow(0 16px 32px rgba(80, 60, 30, .14));
 }
 
-.case__shot+.case__shot {
-    /* margin-top: 40px; */
-}
 
 .case__content {
     flex: 1 1 420px;
