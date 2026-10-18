@@ -99,10 +99,6 @@ summary {
     text-wrap: pretty;
 }
 
-.br-m:not(.br-d) {
-    display: none;
-}
-
 .cmp__before>span,
 .cmp__after>span,
 .faq details p,
@@ -1564,9 +1560,7 @@ section[id] {
     }
 
     .step {
-        grid-template-columns: 32px minmax(0, 1fr);
-        column-gap: 8px;
-        padding: 20px 18px;
+        grid-template-columns: 48px minmax(0, 1fr);
         align-items: baseline;
         min-height: 0;
     }
@@ -1726,11 +1720,6 @@ section[id] {
     .cmp__after .ico--ok {
         stroke: #1E9E55;
         stroke-width: 2.2;
-    }
-
-    .br-m:not(.br-d),
-    .br-d.br-m {
-        display: inline;
     }
 }
 
