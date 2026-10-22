@@ -6,6 +6,15 @@
     var $ = function (sel) { return document.querySelector(sel); };
     var $$ = function (sel) { return Array.prototype.slice.call(document.querySelectorAll(sel)); };
 
+    var siteHeader = $('.site-header');
+
+    function setHeaderOffset() {
+        document.documentElement.style.setProperty('--header-offset', siteHeader.offsetHeight + 'px');
+    }
+
+    setHeaderOffset();
+    window.addEventListener('resize', setHeaderOffset);
+
     var BUSINESSES = {
         bakery: {
             label: '빵집', query: '동네 빵집', name: 'OO베이커리', title: 'OO베이커리 — 매일 아침 굽는 동네 빵집',
